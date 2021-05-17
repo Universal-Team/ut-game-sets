@@ -169,7 +169,7 @@ for path in sets:
 			info["title"] if "title" in info else setName: [
 				{
 					"type": "downloadFile",
-					"file": f"https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/{urllib.parse.quote(path)}/{setName}.t3x",
+					"file": f"https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/{urllib.parse.quote(path)}/{urllib.parse.quote(setName)}.t3x",
 					"output": f"sdmc:/3ds/ut-games/sets/{getName(path)}/{setName}.t3x",
 					"message": f"Downloading {info['title'] if 'title' in info else setName}..."
 				}
