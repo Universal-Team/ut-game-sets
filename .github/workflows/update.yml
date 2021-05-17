@@ -29,9 +29,9 @@ jobs:
       uses: github-actions-x/commit@v2.6
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        push-branch: 'master'
-        commit-message: 'Update UniStore and pages'
-        force-add: 'false'
-        files: '*'
+        push-branch: main
+        commit-message: Update UniStore and pages
+        force-add: false
+        files: "*"
         name: TWLBot
         email: flamekat54@aol.com 
