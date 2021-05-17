@@ -48,22 +48,22 @@ def webName(name):
 	return out
 
 def getSection(path):
-    for section in sections:
-        if section + os.path.sep in path:
-            return section
-    return ""
+	for section in sections:
+		if section + os.path.sep in path:
+			return section
+	return ""
 
 def getName(path):
-    for section in sections:
-        if section + os.path.sep in path:
-            return sections[section]["name"]
-    return ""
+	for section in sections:
+		if section + os.path.sep in path:
+			return sections[section]["name"]
+	return ""
 
 def getDefaultIcon(path):
-    for section in sections:
-        if section + os.path.sep in path:
-            return sections[section]["icon"]
-    return -1
+	for section in sections:
+		if section + os.path.sep in path:
+			return sections[section]["icon"]
+	return -1
 
 # Read version from old unistore
 unistoreOld = {}
