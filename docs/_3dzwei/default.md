@@ -10,8 +10,8 @@ downloads:
   default.t3x:
     size: 39729
     url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/3dzwei/default/default.t3x
-icon: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/3dzwei/default/icon.png
-image: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/3dzwei/default/icon.png
+icon: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/icons/sets/3dzwei/default/icon.png
+image: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/icons/sets/3dzwei/default/icon.png
 last_updated: 2021-05-17 at 12:33 (UTC)
 layout: app
 license: ''
