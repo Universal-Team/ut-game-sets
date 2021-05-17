@@ -187,9 +187,9 @@ for path in sets:
 		"size": os.path.getsize(os.path.join(path, f"{setName}.t3x"))
 		}}
 	if web["icon_index"] < len(sections):
-		web["icon"] = f"https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/{getSection(path)}.png"
+		web["icon"] = f"https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/icons/{getSection(path)}.png"
 	else:
-		web["icon"] = f"https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/icons/{urllib.parse.quote(path)}/icon.png"
+		web["icon"] = f"https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/{urllib.parse.quote(path)}/icon.png"
 	web["image"] = web["icon"]
 	web.pop("icon_index")
 	if "title" in web:

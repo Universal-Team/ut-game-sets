@@ -10,8 +10,8 @@ downloads:
   default.t3x:
     size: 144905
     url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/default/default.t3x
-icon: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/characters.png
-image: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/characters.png
+icon: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/icons/characters.png
+image: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/icons/characters.png
 last_updated: 2021-05-17 at 08:38 (UTC)
 layout: app
 license: ''
