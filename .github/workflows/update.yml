@@ -1,9 +1,9 @@
 name: Update UniStore and pages
 
 on:
- push:
-   branches: [ master ]
-   paths: [ generate.py, "sets/**", .github/workflows/update.yml ]
+  push:
+    branches: [ master ]
+    paths: [ generate.py, "sets/**", .github/workflows/update.yml ]
 
 jobs:
   run:
