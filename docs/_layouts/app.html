@@ -64,6 +64,10 @@ layout: compress
 												<br>
 												License: {{ page.license_name }}
 											{% endif %}
+											{% if page.amount %}
+												<br>
+												Amount: {{ page.amount }}
+											{% endif %}
 										</small>
 									</div>
 								</div>
@@ -100,7 +104,7 @@ layout: compress
 												{% endif %}
 											</span>
 										{% endfor %}
-										
+
 										{% if page.version and page.downloads %}
 											<br>
 											<small class="text-muted">
@@ -139,7 +143,7 @@ layout: compress
 													{% endif %}
 												</span>
 											{% endfor %}
-			
+
 											{% if page.prerelease.version %}
 												<br>
 												<small class="text-muted">
@@ -179,7 +183,7 @@ layout: compress
 													{% endif %}
 												</span>
 											{% endfor %}
-			
+
 											{% if page.nightly.download_page %}
 												<br>
 												<small class="text-muted">

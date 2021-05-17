@@ -5,7 +5,7 @@ layout: compress
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel>
-		<title>Unlaunch Backgrounds | {{ site.title }}</title>
+		<title>Characters | {{ site.title }}</title>
 		<link>{{ site.url }}</link>
 		<atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml" />
 		<description>{{ site.description }}</description>

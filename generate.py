@@ -6,8 +6,7 @@ import glob
 import io
 import json
 import os
-from PIL import Image, ImageDraw
-import py7zr
+from PIL import Image
 import sys
 import urllib.parse
 import yaml
@@ -49,30 +48,22 @@ def webName(name):
 	return out
 
 def getSection(path):
-	for section in sections:
-		if f"{section}/" in path:
-			return section
-	return ""
+    for section in sections:
+        if section + os.path.sep in path:
+            return section
+    return ""
 
 def getName(path):
-	for section in sections:
-		if f"{section}/" in path:
-			return sections[section]["name"]
-	return ""
+    for section in sections:
+        if section + os.path.sep in path:
+            return sections[section]["name"]
+    return ""
 
 def getDefaultIcon(path):
-	for section in sections:
-		if f"{section}/" in path:
-			return sections[section]["icon"]
-	return -1
-
-def lastUpdated(sevenZip):
-	latest = None
-	for item in sevenZip.list():
-		if latest == None or item.creationtime > latest:
-			latest = item.creationtime
-
-	return latest
+    for section in sections:
+        if section + os.path.sep in path:
+            return sections[section]["icon"]
+    return -1
 
 # Read version from old unistore
 unistoreOld = {}
@@ -124,10 +115,10 @@ sets = [f for f in glob.glob("sets/*/*")]
 for path in sets:
 	info = {}
 
-	setName = path[path.rfind("/")+1:]
+	setName = path[path.rfind(os.path.sep)+1:]
 
-	updated = datetime.datetime.utcfromtimestamp(int(git.Repo(".").git.log(["-n1", "--pretty=format:%ct", "--", os.path.join(path, f"{setName}.t3x")])))
-	created = datetime.datetime.utcfromtimestamp(int(git.Repo(".").git.log(["--pretty=format:%ct", "--", os.path.join(path, f"{setName}.t3x")]).split("\n")[-1]))
+	updated = datetime.datetime.utcfromtimestamp(int("0" + git.Repo(".").git.log(["-n1", "--pretty=format:%ct", "--", path.replace("\\", "/") + f"/{setName}.t3x"])))
+	created = datetime.datetime.utcfromtimestamp(int("0" + git.Repo(".").git.log(["--pretty=format:%ct", "--", path.replace("\\", "/") + f"/{setName}.t3x"]).split("\n")[-1]))
 
 	with open(os.path.join(path, "info.json")) as file:
 		info = json.load(file)
@@ -155,6 +146,9 @@ for path in sets:
 		"license": info["license"] if "license" in info else "",
 		"last_updated": updated.strftime("%Y-%m-%d at %H:%M (UTC)")
 	}
+
+	if "amount" in info:
+  		setInfo["amount"] = info["amount"]
 
 	if not "unistore_exclude" in info or info["unistore_exclude"] == False:
 		# Make icon for UniStore

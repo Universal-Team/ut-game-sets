@@ -23,7 +23,7 @@ layout: compress
 								{{ page.description | escape }}
 							</div>
 						{% endif %}
-						
+
 						{% if page.system %}
 							<div class="d-none script-show">
 								<div class="mb-3">
@@ -40,7 +40,7 @@ layout: compress
 								</div>
 							</div>
 						{% endif %}
-						
+
 						{% if page.system == "3deins" %}
 							{% assign cards = site["3deins"] %}
 						{% elsif page.system == "3dzwei" %}
@@ -86,7 +86,7 @@ layout: compress
 														<div class="{% if app.qr.size == 1 %}col-10{% else %}col-12{% endif %}">
 															<small class="text-muted">
 																{% unless page.system %}
-																	Theme: {{ app.systems | join: ", "}}
+																	App: {{ app.systems | join: ", "}}
 																	<br>
 																{% endunless %}
 																{% if app.version %}
@@ -95,6 +95,10 @@ layout: compress
 																{% if app.updated != "---" %}
 																	{% if app.version %}<br>{% endif %}
 																	Last updated: <time datetime="{{ app.updated }}" title="{{ app.updated | date: '%Y-%m-%d at %H:%M' }}">{{ app.updated | date: "%Y-%m-%d" }}</time>
+																{% endif %}
+																{% if app.amount %}
+																	<br>
+																	Amount: {{ app.amount }}
 																{% endif %}
 															</small>
 														</div>
