@@ -1,0 +1,15 @@
+title       : "Universal-Team Game Sets"
+description : "Additional card sets for Universal-Team games"
+repo        : "Universal-Team/ut-game-sets"
+color       : "#47a07c"
+image       : "https://universal-team.net/images/icons/universal-team.png"
+
+collections:
+  3deins:
+    output: true
+  3dzwei:
+    output: true
+  3dvier:
+    output: true
+  characters:
+    output: true

@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Home",
+		"url": "/"
+	},
+	{
+		"title": "3DEins",
+		"url": "/3deins"
+	},
+	{
+		"title": "3DZwei",
+		"url": "/3dzwei"
+	},
+	{
+		"title": "3DVier",
+		"url": "/3dvier"
+	},
+	{
+		"title": "Characters",
+		"url": "/characters"
+	}
+]
