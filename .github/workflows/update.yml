@@ -20,6 +20,9 @@ jobs:
         sudo apt-get install python3-pip -y
         pip3 install -r requirements.txt
 
+    - name: Delete old pages
+      run: rm -rf docs/_*/*.md
+
     - name: Run generate.py
       run: |
         export PATH=$PATH:/opt/devkitpro/tools/bin
