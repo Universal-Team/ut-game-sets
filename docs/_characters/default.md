@@ -22,18 +22,6 @@ screenshots:
   url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/default/screenshots/1.png
 - description: '2'
   url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/default/screenshots/2.png
-- description: '3'
-  url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/default/screenshots/3.png
-- description: '4'
-  url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/default/screenshots/4.png
-- description: '5'
-  url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/default/screenshots/5.png
-- description: '6'
-  url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/default/screenshots/6.png
-- description: '7'
-  url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/default/screenshots/7.png
-- description: '8'
-  url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/default/screenshots/8.png
 systems:
 - Characters
 title: Default
