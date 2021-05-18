@@ -45,7 +45,7 @@ layout: compress
 									{% if page.website %}</a>{% elsif page.source %}</a>{% endif %}
 									<div class="card-footer">
 										<small class="text-muted">
-											Theme:
+											App:
 											{% for system in page.systems %}
 												<a href="/{{ system | downcase | replace: " ", "-" }}">{{ system }}</a>{% if forloop.last == false %},{% endif %}
 											{% endfor %}

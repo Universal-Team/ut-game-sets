@@ -3,7 +3,6 @@
 import datetime
 import git
 import glob
-import io
 import json
 import os
 from PIL import Image
@@ -91,7 +90,7 @@ unistore = {
 icons = []
 iconIndex = 0
 
-# Make 3DS, DSi, R4 icons
+# Make 3DEins, 3DZwei, 3DVier and Character icons
 for file in os.listdir("icons"):
 	if file[-3:] == "png":
 		with Image.open(open(os.path.join("icons", file), "rb")) as icon:
@@ -103,12 +102,7 @@ for file in os.listdir("icons"):
 			icons.append(str(iconIndex) + ".png")
 			iconIndex += 1
 
-# Auth header
-header = None
-if len(sys.argv) > 1:
-	header = {"Authorization": f"token {sys.argv[1]}"}
-
-# Get path files
+# Get set files
 sets = [f for f in glob.glob("sets/*/*")]
 
 # Generate UniStore entries
@@ -148,7 +142,7 @@ for path in sets:
 	}
 
 	if "amount" in info:
-  		setInfo["amount"] = info["amount"]
+		setInfo["amount"] = info["amount"]
 
 	if not "unistore_exclude" in info or info["unistore_exclude"] == False:
 		# Make icon for UniStore
