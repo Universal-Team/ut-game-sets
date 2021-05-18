@@ -91,7 +91,9 @@ icons = []
 iconIndex = 0
 
 # Make 3DEins, 3DZwei, 3DVier and Character icons
-for file in os.listdir("icons"):
+iconFiles = os.listdir("icons")
+iconFiles.sort()
+for file in iconFiles:
 	if file[-3:] == "png":
 		with Image.open(open(os.path.join("icons", file), "rb")) as icon:
 			if not os.path.exists(os.path.join("icons", "temp")):
