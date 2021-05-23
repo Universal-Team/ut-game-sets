@@ -58,7 +58,7 @@ screenshots:
   url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/3dzwei/project-diva-extend/screenshots/9.png
 systems:
 - 3DZwei
-title: Hatsune Miku -Project DIVA- extend cards
+title: Hatsune Miku -Project DIVA- extend Cards
 updated: '2021-05-23T05:10:51Z'
 version: v1.0.0
 ---
