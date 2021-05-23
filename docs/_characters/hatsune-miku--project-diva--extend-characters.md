@@ -12,8 +12,8 @@ downloads:
   project-diva-extend.t3x:
     size: 884649
     url: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/project-diva-extend/project-diva-extend.t3x
-icon: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/icons/characters.png
-image: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/icons/characters.png
+icon: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/project-diva-extend/icon.png
+image: https://raw.githubusercontent.com/Universal-Team/ut-game-sets/main/sets/characters/project-diva-extend/icon.png
 last_updated: 2021-05-23 at 06:20 (UTC)
 layout: app
 license: ''
